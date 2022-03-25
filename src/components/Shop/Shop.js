@@ -11,14 +11,20 @@ const Shop = () => {
         .then(data => setAircrafts(data))
     },[]);
 
-    const addToCart = () =>{
-
+    const addToCart = (id) =>{
+        const cartAircraft = aircrafts.find(aircraft => aircraft.id === id);
+        if(cart.length < 4){
+            setCart([...cart, cartAircraft]);
+        }
+        else{
+            alert('cannot add more than 4 items')
+        }
     }
     return (
         <div className='shop'>
-            <AircraftContainer aircrafts={aircrafts}></AircraftContainer>
+            <AircraftContainer addToCart={addToCart} aircrafts={aircrafts}></AircraftContainer>
             <div className='cart-container'>
-                <Cart></Cart>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );

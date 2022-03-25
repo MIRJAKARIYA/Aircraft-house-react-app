@@ -1,0 +1,16 @@
+.cart-item{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-name-img-container{
+    display: flex;
+    align-items: center;
+}
+.cart-item-img{
+    width: 50px;
+    border-radius: 5px;
+}

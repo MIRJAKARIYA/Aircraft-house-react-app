@@ -1,7 +1,6 @@
 import React from 'react';
 import './Aircraft.css'
-const Aircraft = ({aircraft}) => {
-    console.log(aircraft)
+const Aircraft = ({aircraft,addToCart}) => {
     const {name,id,price,image} = aircraft;
 
     return (
@@ -13,7 +12,7 @@ const Aircraft = ({aircraft}) => {
                 <p>Name: {name}</p>
                 <p>Price: {price}</p>
             </div>
-            <button className='add-to-cart-btn'>Add to cart</button>
+            <button onClick={()=>addToCart(id)} className='add-to-cart-btn'>Add to cart</button>
         </div>
     );
 };
