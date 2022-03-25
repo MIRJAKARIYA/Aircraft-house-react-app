@@ -31,4 +31,10 @@
 .clear-btn:hover{
     background-color: rgb(150, 0, 0);
 }
+@media only screen and (max-width: 900px){
+    .cart{
+        border-radius: 10px;
+        margin-bottom: 15px
+    }
+}
 
