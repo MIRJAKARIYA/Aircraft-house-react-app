@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Eclipse-N503EA",
+        "price": 500000,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Eclipse-N503EA-060825-14-16.jpg" 
+    },
+    {
+        "id": 2,
+        "name": "Japaner hoffen auf Mitsubishi",
+        "price": 975000,
+        "image": "https://www.autogazette.de/wp-content/uploads/250414-1.jpg" 
+    },
+    {
+        "id": 3,
+        "name": "Stratos 714 VLJ",
+        "price": 650000,
+        "image": "https://i.pinimg.com/originals/6c/17/ac/6c17acd48b9a78675ad7b28aafcd61a6.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cirrus SF50 vision",
+        "price": 700000,
+        "image": "https://cdn.planeandpilotmag.com/2019/11/cirrus-jet-for-opener-AMG.jpg"
+    },
+    {
+        "id": 5,
+        "name": "HondaJet",
+        "price": 1200000,
+        "image": "https://aeroaffaires.fr/wp-content/uploads/2019/06/capture-decran-2021-07-18-a-19-55-55.png"
+    },
+    {
+        "id": 6,
+        "name": "Hawker 1000",
+        "price": 2100000,
+        "image": "https://www.assurejets.com/wp-content/uploads/2016/02/Hawker-1000-PrivateFly-AA9765.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Cessna Citation Mustang 510",
+        "price": 1500000,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/F-HAHA_Cessna_Citation_Mustang_510_%2828388869316%29.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Cessna 182 Skylane",
+        "price": 105000,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Cessna182t_skylane_n2231f_cotswoldairshow_2010_arp.jpg/1280px-Cessna182t_skylane_n2231f_cotswoldairshow_2010_arp.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Beechcraft Sierra 2n",
+        "price": 250000,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Beechcraft_Sierra_2n.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Cessna 172 Skyhawk",
+        "price": 85000,
+        "image": "https://animium.com/wp-content/uploads/2012/02/cessna172.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Beech Queen Air B80",
+        "price": 625000,
+        "image": "http://www.oregonprivateairline.com/wp-content/uploads/2019/01/Beech-Queen.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Corvalis TTX",
+        "price": 95000,
+        "image": "https://i.pinimg.com/originals/c1/e3/5d/c1e35d771ce45fddc76c406c0ccd7484.jpg"
+    }
+]
