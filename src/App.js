@@ -34,8 +34,8 @@ function App() {
   }
   return (
     <div className="App">
-        <h1>Aircraft House</h1>
-        <h2>Get your dream Aircraft</h2>
+        <h1 className='website-title'>Aircraft House</h1>
+        <h2 className='website-subtitle'>Get your dream Aircraft!!!!</h2>
         <Shop openModal={openModal}></Shop>
 
 

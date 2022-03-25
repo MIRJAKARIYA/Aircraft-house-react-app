@@ -1,6 +1,17 @@
 .App {
   text-align: center;
 }
+.website-title{
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color:rgb(105, 44, 161);
+}
+.website-subtitle{
+  margin-top: 0;
+  margin-bottom: 30px;
+  color:rgb(134, 36, 36);
+}
 .modal-img{
   width: 100%;
 }
