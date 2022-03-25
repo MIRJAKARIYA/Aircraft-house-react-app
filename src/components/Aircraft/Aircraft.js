@@ -1,5 +1,6 @@
 import React from 'react';
-import './Aircraft.css'
+import './Aircraft.css';
+import { BsCart4 } from 'react-icons/bs';
 const Aircraft = ({aircraft,addToCart}) => {
     const {name,id,price,image} = aircraft;
 
@@ -10,9 +11,9 @@ const Aircraft = ({aircraft,addToCart}) => {
             </div>
             <div>
                 <p>Name: {name}</p>
-                <p>Price: {price}</p>
+                <p>Price: ${price}</p>
             </div>
-            <button onClick={()=>addToCart(id)} className='add-to-cart-btn'>Add to cart</button>
+            <button onClick={()=>addToCart(id)} className='add-to-cart-btn'>Add to cart <span><BsCart4></BsCart4></span></button>
         </div>
     );
 };

@@ -1,16 +1,28 @@
 .cart-item{
     padding: 5px;
-    background-color: black;
-    color: white;
+    background-color: rgb(229, 226, 226);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.493);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 8px;
 }
 .item-name-img-container{
     display: flex;
     align-items: center;
 }
 .cart-item-img{
-    width: 50px;
+    width: 70px;
     border-radius: 5px;
+}
+.cart-item-name{
+    margin-left: 3px;
+}
+.delete-btn{
+    font-size: 25px;
+    background-color: transparent;
+    color: rgb(187, 3, 3);
+    border: none;
+    cursor: pointer;
 }

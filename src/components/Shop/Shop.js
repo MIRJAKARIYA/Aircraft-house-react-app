@@ -13,18 +13,25 @@ const Shop = () => {
 
     const addToCart = (id) =>{
         const cartAircraft = aircrafts.find(aircraft => aircraft.id === id);
+        const isExists = cart.find(item => item.id === id)
         if(cart.length < 4){
-            setCart([...cart, cartAircraft]);
+            if(!isExists){
+                setCart([...cart, cartAircraft]);
+            }
         }
         else{
             alert('cannot add more than 4 items')
         }
     }
+    const deleteItemFromCart = (id) =>{
+        const remainingCartItems = cart.filter(item => item.id !== id);
+        setCart(remainingCartItems);
+    }
     return (
         <div className='shop'>
             <AircraftContainer addToCart={addToCart} aircrafts={aircrafts}></AircraftContainer>
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} deleteItemFromCart={deleteItemFromCart}></Cart>
             </div>
         </div>
     );

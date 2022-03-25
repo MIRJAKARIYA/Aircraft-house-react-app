@@ -1,13 +1,15 @@
 import React from 'react';
 import './CartItem.css';
-const CartItem = ({item}) => {
+import { MdDelete } from 'react-icons/md';
+const CartItem = ({item,deleteItemFromCart}) => {
+    const {name,image,id} = item;
     return (
         <div className='cart-item'>
             <div className='item-name-img-container'>
-                <img className='cart-item-img' src={item.image} alt="" />
-                <p>{item.name}</p>
+                <img className='cart-item-img' src={image} alt="" />
+                <p className='cart-item-name'>{name}</p>
             </div>
-            <button>del</button>
+            <button onClick={()=>deleteItemFromCart(id)} className='delete-btn'><MdDelete></MdDelete></button>
         </div>
     );
 };
