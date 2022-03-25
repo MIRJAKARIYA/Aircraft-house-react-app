@@ -23,6 +23,9 @@ const Shop = ({openModal}) => {
             alert('cannot add more than 4 items')
         }
     }
+    const clearCart = () =>{
+        setCart([]);
+    }
     const deleteItemFromCart = (id) =>{
         const remainingCartItems = cart.filter(item => item.id !== id);
         setCart(remainingCartItems);
@@ -31,7 +34,7 @@ const Shop = ({openModal}) => {
         <div className='shop'>
             <AircraftContainer addToCart={addToCart} aircrafts={aircrafts}></AircraftContainer>
             <div className='cart-container'>
-                <Cart openModal={openModal} cart={cart} deleteItemFromCart={deleteItemFromCart}></Cart>
+                <Cart openModal={openModal} clearCart={clearCart} cart={cart} deleteItemFromCart={deleteItemFromCart}></Cart>
             </div>
         </div>
     );
