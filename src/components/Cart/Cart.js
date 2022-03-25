@@ -11,7 +11,10 @@ const Cart = ({cart,deleteItemFromCart}) => {
             </div>
 
             <div className='additional-cart-feature'>
-
+                <div>
+                    <button>CHOOSE 1 FOR ME</button>
+                    <button>CLEAR CART</button>
+                </div>
             </div>
         </div>
     );
