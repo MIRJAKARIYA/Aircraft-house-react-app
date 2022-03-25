@@ -1,0 +1,27 @@
+.aircraft{
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.308);
+    color: black;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+}
+.aircraft-image{
+    width: 95%;
+    height: 350px;
+    border-radius: 10px;
+}
+.add-to-cart-btn{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(175, 165, 110);
+    font-size: 18px;
+    transition: All 0.3s;
+}
+.add-to-cart-btn:hover{
+    background-color: rgb(112, 103, 53);
+    color: white;
+    cursor: pointer;
+}

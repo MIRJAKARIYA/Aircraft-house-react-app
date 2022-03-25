@@ -1,0 +1,8 @@
+.cart{
+    border: 1px solid red;
+    min-height: 500px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+}
