@@ -1,7 +1,7 @@
 import React from 'react';
 import CartItem from '../CartItem/CartItem';
 import './Cart.css'
-const Cart = ({cart,deleteItemFromCart}) => {
+const Cart = ({cart,deleteItemFromCart,openModal}) => {
     return (
         <div className='cart'>
             <div>
@@ -12,8 +12,12 @@ const Cart = ({cart,deleteItemFromCart}) => {
 
             <div className='additional-cart-feature'>
                 <div>
-                    <button>CHOOSE 1 FOR ME</button>
-                    <button>CLEAR CART</button>
+                    <div>
+                        <button className='cart-special-btn' onClick={()=>openModal(cart)}>CHOOSE 1 FOR ME</button>
+                    </div>
+                    <div>
+                        <button className='cart-special-btn' >CLEAR CART</button>
+                    </div>
                 </div>
             </div>
         </div>

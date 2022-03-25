@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AircraftContainer from '../AircraftContainer/AircraftContainer';
 import Cart from '../Cart/Cart';
 import './Shop.css';
-const Shop = () => {
+const Shop = ({openModal}) => {
     const [aircrafts, setAircrafts] = useState([]);
     const [cart, setCart] = useState([])
     useEffect( ()=>{
@@ -31,7 +31,7 @@ const Shop = () => {
         <div className='shop'>
             <AircraftContainer addToCart={addToCart} aircrafts={aircrafts}></AircraftContainer>
             <div className='cart-container'>
-                <Cart cart={cart} deleteItemFromCart={deleteItemFromCart}></Cart>
+                <Cart openModal={openModal} cart={cart} deleteItemFromCart={deleteItemFromCart}></Cart>
             </div>
         </div>
     );

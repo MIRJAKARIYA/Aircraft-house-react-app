@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+.modal-img{
+  width: 100%;
+}
+.modal-close-button{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  font-size: 25px;
+  background-color: rgb(153, 2, 2);
+  color: white;
+  cursor: pointer;
+}
