@@ -7,7 +7,7 @@ const Questions = () => {
             <div className='questions'>
                 <h1>How React Works?</h1>
                 <p className='answers'>
-                    React is a Javascript library which is very efficient,declarative and flexible.React is used for building interactive Single Page Applications.React allows us to split the complex UI's into some small and isolated pieces of code which are called components.when we run a website which is made by react in the browser,react renders all the components in the website by converting the whole code into actual DOM.In this process at first react creats a virtual DOM which is a lightweight copy of the actual DOM object and stores it in the memory.If any change of data happens in the app then react creates a new virtual DOM again and compares it with the previously stored virtual DOM by the help of DIFF algorithm and finds out where the change occured.After finding the change react only updates the component where the change happened and renders it in the actual DOM without rewritting the whole DOM in the browser.The new virtual DOM is stored in place of the old one.This process happens on every change in the react app.This process is very fast and efficient and doesn't require any page reload.
+                    React is a Javascript library which is very efficient,declarative and flexible.React is used for building interactive Single Page Applications.React allows us to split the complex UI's into some small and isolated pieces of code which are called components.when we run a website which is made by react in the browser,react renders all the components in the website by converting the whole code into actual DOM.In this process at first react creates a virtual DOM which is a lightweight copy of the actual DOM object and stores it in the memory.If any change of data happens in the app then react creates a new virtual DOM again and compares it with the previously stored virtual DOM by the help of DIFF algorithm and finds out where the change occured.After finding the change react only updates the component where the change happened and renders it in the actual DOM without rewritting the whole DOM in the browser.The new virtual DOM is then stored in place of the old one.This process happens on every change in the react app.This process is very fast and efficient and doesn't require any page reload.
                 </p>
             </div>
             <div className='questions'>
@@ -19,7 +19,7 @@ const Questions = () => {
                 <ul className='answers'>
                     <li>By using props we can pass data from one react component to other but using state we can only pass data within the component where it exists.</li>
                     <li>props are immutable which means if we pass any data using props then the data can't be changed after passing on the other hand  state is mutable which means we can change the data inside the state variable after passing it.</li>
-                    <li>props data can only be read but can't be read on the other hand state is both read and write.</li>
+                    <li>props data can only be read but can't be write on the other hand state is both read and write.</li>
                 </ul>
             </div>
         </div>

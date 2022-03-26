@@ -4,13 +4,12 @@ import Cart from '../Cart/Cart';
 import './Shop.css';
 const Shop = ({openModal}) => {
     const [aircrafts, setAircrafts] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
     useEffect( ()=>{
         fetch('data.json')
         .then(res => res.json())
         .then(data => setAircrafts(data))
     },[]);
-
     const addToCart = (id) =>{
         const cartAircraft = aircrafts.find(aircraft => aircraft.id === id);
         const isExists = cart.find(item => item.id === id)
@@ -20,7 +19,7 @@ const Shop = ({openModal}) => {
             }
         }
         else{
-            alert('cannot add more than 4 items')
+            alert("Can not add more than 4 items.");
         }
     }
     const clearCart = () =>{
