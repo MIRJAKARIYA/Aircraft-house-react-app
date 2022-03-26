@@ -2,6 +2,8 @@ import './App.css';
 import Shop from './components/Shop/Shop';
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import Questions from './components/Questions/Questions';
+import Footer from './components/Footer/Footer';
 const customStyles = {
   content: {
     top: '50%',
@@ -37,8 +39,8 @@ function App() {
         <h1 className='website-title'>Aircraft House</h1>
         <h2 className='website-subtitle'>Get your dream Aircraft!!!!</h2>
         <Shop openModal={openModal}></Shop>
-
-
+        <Questions></Questions>
+        <Footer></Footer>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}

@@ -1,0 +1,14 @@
+.question-container{
+    width: 70%;
+    margin: 50px auto;
+    min-width: 200px;
+}
+.questions{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.432);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.answers{
+    text-align: left;
+}
